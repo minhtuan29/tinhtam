@@ -1,0 +1,128 @@
+<html lang="en" itemscope="" itemtype="http://schema.org/WebPage">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" type="image/x-icon" href="./tungkinh.png">
+  <title>Tịnh Tâm</title>
+</head>
+
+<body>
+  <div style="position: absolute; width: 1px; height: 1px; z-index: 1; left: -100px; top: -200px" id="layer1"><img
+      src="./src/khoi.png">
+  </div>
+
+
+  <link href="./src/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+  <div class="container" style="max-width: 100%; max-height: 90%; min-width: 80%; min-height: 90%;">
+
+
+
+    <style>
+      body {
+        margin-top: 10;
+        width: 100%;
+        height: 60%;
+        background-color: dimgrey;
+      }
+
+      canvas {
+        position: absolute;
+      }
+    </style>
+
+
+    <div style="margin-left: 45.5%;">
+      <canvas id="canvas" height="851" width="100" style="top: 27%; left: 47%;"></canvas>
+    </div>
+    <script src="./src/1.js"></script>
+    <img style="width: 100%;" src="./src/top.jpg">
+    <img style="width: 100%;" src="./src/Scene1_.jpg">
+
+    <img id="btnDacDao" onclick="location = './dacdao.html'" src="./dacdao.png"
+      style="margin-left: 21%; margin-top: 10; height: 11%;border-radius: 1em;">
+
+    <img id="btnTungKinh" src="./tungkinh.png"
+      style="margin-left: 20%; margin-top: 10; height: 12%;border-radius: 1em;">
+
+    <img id="btnCungDuong" src="./cungduong.png" onclick="location = './cungduong.html'"
+      style="margin-left: 19%; margin-top: 10; height: 11%; border-radius: 1em;">
+
+
+
+    <style>
+      #btnTungKinh,
+      #btnDacDao,
+      #btnCungDuong {
+        opacity: 0.8;
+      }
+
+      #btnTungKinh:hover,
+      #btnDacDao:hover,
+      #btnCungDuong:hover {
+        opacity: 1;
+      }
+    </style>
+  </div>
+
+
+
+
+  <script>
+
+    setTimeout(() => alert("Bấm vô Chú Tiểu để  BẬT/TẮT  tụng kinh"), 3000);
+
+
+    let musicIdx = 0;
+    let musicArr = [
+      new Audio("/music/b1.mp3"),
+      new Audio("/music/b2.mp3"),
+      new Audio("/music/b3.mp3"),
+      new Audio("/music/b4.mp3"),
+      new Audio("/music/b5.mp3")
+    ];
+
+
+    let myAudio = musicArr[musicIdx];
+    let isOnAudio = false;
+    document.getElementById("btnTungKinh").onclick = () => {
+      isOnAudio = !isOnAudio;
+      if (isOnAudio) {
+        if (musicIdx > 4) musicIdx = 0;
+        myAudio = musicArr[musicIdx++];
+        myAudio.play();
+        myAudio.addEventListener("ended", () => {
+          myAudio.currentTime = 0;
+          myAudio.pause();
+
+          if (musicIdx > 4) musicIdx = 0;
+          myAudio = musicArr[musicIdx++];
+          myAudio.play();
+          isOnAudio = true;
+        })
+      } else {
+        myAudio.pause();
+        myAudio.currentTime = 0;
+      }
+    }
+
+
+
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>
