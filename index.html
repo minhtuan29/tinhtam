@@ -78,7 +78,8 @@
 
   <script>
 
-    setTimeout(() => alert("bấm vô Chú Tiểu để  (bật/tắt)  tụng kinh"), 3000);
+
+    setTimeout(() => alert("Bấm vô Chú Tiểu để  BẬT/TẮT  tụng kinh"), 2500);
 
 
     let musicIdx = 0;
@@ -94,13 +95,24 @@
     let body = document.getElementsByTagName("BODY")[0];
     let myAudio = musicArr[musicIdx];
     let isOnAudio = false;
-    
-    
+
+    let btnDacDao = document.getElementById("btnDacDao");
+    let btnCungDuong = document.getElementById("btnCungDuong");
+    function hideDacDaoCungDuong() {
+      btnCungDuong.style.display = "none";
+      btnDacDao.style.display = "none";
+    }
+    function showDacDaoCungDuong() {
+      btnCungDuong.style.display = "inline";
+      btnDacDao.style.display = "inline";
+    }
+
     document.getElementById("btnTungKinh").onclick = () => {
       isOnAudio = !isOnAudio;
       if (isOnAudio) {
 
         body.webkitRequestFullscreen();
+        hideDacDaoCungDuong();
 
         if (musicIdx > musicArr.length) musicIdx = 0;
         myAudio = musicArr[musicIdx++];
@@ -118,8 +130,10 @@
         myAudio.pause();
         myAudio.currentTime = 0;
         document.webkitExitFullscreen();
+        showDacDaoCungDuong();
       }
     }
+
 
   </script>
 
