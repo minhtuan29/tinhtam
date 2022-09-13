@@ -25,12 +25,12 @@ var parts = [],
     emitterY = canvas.height / 2.1, ///cao
     smokeImage = new Image();
 
- curSpa = 1662979518254;
+
 function spawn() {
  
-  curSpa += 16;
-  if (curSpa> lastTime + minSpawnTime) {
-    lastTime = curSpa;
+  
+  if (new Date().getTime()> lastTime + minSpawnTime) {
+    lastTime = new Date().getTime();
     parts.push(new smoke(emitterX, emitterY));
   }
 }
@@ -82,12 +82,12 @@ function smoke(x, y, index) {
   this.velX = Math.floor(Math.random() * (-6) + 3) / 10;
 }
 
-let iUpdate = 1662979518254; let x = 1;
-smoke.prototype.update = function () {
-   
 
-  iUpdate += x++ % 5 ? 1 : 0;
-  this.lifeTime = iUpdate - this.startLife;
+smoke.prototype.update = function () {
+  
+
+ 
+  this.lifeTime = new Date().getTime() - this.startLife;
   this.angle += 0.2;
   
   var lifePerc = ((this.lifeTime / maxLifeTime) * 100);
