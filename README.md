@@ -1,4 +1,4 @@
-# tinhtam-cf
+# Tịnh Tâm
 ăn chay niệm phật  
-Website: https://tinhtam.cf  | https://minhtuan29.github.io/tinhtam-cf  
+Website: https://tinhtam.tk  | https://minhtuan29.github.io/tinhtam  
 Reference: http://tuvien.com  
