@@ -81,7 +81,6 @@
     setTimeout(() => alert("bấm vô Chú Tiểu để  (bật/tắt)  tụng kinh"), 3000);
 
 
-
     let musicIdx = 0;
     let musicArr = [
       new Audio("/music/b1.mp3"),
@@ -90,6 +89,7 @@
       new Audio("/music/b4.mp3"),
       new Audio("/music/b5.mp3")
     ];
+
 
     let body = document.getElementsByTagName("BODY")[0];
     let myAudio = musicArr[musicIdx];
@@ -102,14 +102,14 @@
 
         body.webkitRequestFullscreen();
 
-        if (musicIdx > 4) musicIdx = 0;
+        if (musicIdx > musicArr.length) musicIdx = 0;
         myAudio = musicArr[musicIdx++];
         myAudio.play();
         myAudio.addEventListener("ended", () => {
           myAudio.currentTime = 0;
           myAudio.pause();
 
-          if (musicIdx > 4) musicIdx = 0;
+          if (musicIdx > musicArr.length) musicIdx = 0;
           myAudio = musicArr[musicIdx++];
           myAudio.play();
           isOnAudio = true;
@@ -120,10 +120,6 @@
         document.webkitExitFullscreen();
       }
     }
-
-
-
-
 
   </script>
 
