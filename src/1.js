@@ -1,9 +1,5 @@
-(function () {
-  var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-  window.requestAnimationFrame = requestAnimationFrame;
-})();
 
-var canvas = document.getElementById("canvas"),
+let canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
     settings = {
       color: {
@@ -17,7 +13,9 @@ var canvas = document.getElementById("canvas"),
 canvas.height = document.body.offsetHeight;
 canvas.width = 100;//rong
 
-var parts = [],
+
+
+let parts = [],
     minSpawnTime = 100,//toc do
     lastTime = new Date().getTime(),
     maxLifeTime = Math.min(3000, (canvas.height / (1.5 * 60) * 1000)),
@@ -26,14 +24,18 @@ var parts = [],
     smokeImage = new Image();
 
 
+
+
+
 function spawn() {
- 
-  
   if (new Date().getTime()> lastTime + minSpawnTime) {
     lastTime = new Date().getTime();
     parts.push(new smoke(emitterX, emitterY));
   }
 }
+
+
+
 
 function render() {
   if(loading){
@@ -41,7 +43,7 @@ function render() {
     return false;
   }
   
-  var len = parts.length;
+  let len = parts.length;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   
   while (len--) {
@@ -65,6 +67,9 @@ function render() {
   requestAnimationFrame(render);
 }
 
+
+
+
 function smoke(x, y, index) {
   this.x = x;
   this.y = y;
@@ -84,9 +89,6 @@ function smoke(x, y, index) {
 
 
 smoke.prototype.update = function () {
-  
-
- 
   this.lifeTime = new Date().getTime() - this.startLife;
   this.angle += 0.2;
   
@@ -100,6 +102,7 @@ smoke.prototype.update = function () {
   this.x += this.velX;
   this.y += this.velY;
 }
+
 
 smokeImage.src = document.getElementsByTagName("img")[0].src;
 smokeImage.onload = function(){
@@ -147,8 +150,3 @@ function changeColor() {
   return tCanvas.toDataURL();
 }
 
-// Settings
-var gui = new dat.GUI();
-var colorController = gui.addColor(settings, 'color').onChange(function () {
-  smokeImage.src = changeColor();
-});
