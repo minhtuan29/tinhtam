@@ -1,4 +1,4 @@
-<html lang="en" itemscope="" itemtype="http://schema.org/WebPage">
+<html lang="en" itemtype="http://schema.org/WebPage">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -13,9 +13,6 @@
 
 
   <link href="./src/bootstrap.min.css" rel="stylesheet">
-
-
-
 
 
 
@@ -41,11 +38,11 @@
 
 
     <div style="margin-left: 45.5%;">
-      <canvas id="canvas" style="top: 36%; left: 46.8%;height:550; width:100;"></canvas>
+      <canvas id="canvas" style="top: 36%; left: 46.4%;height:550; width:100;"></canvas>
     </div>
     <script src="./src/1.js"></script>
-    <img style="width: 100%;" src="./src/top.jpg">
-    <img style="width: 100%;" src="./src/Scene1_.jpg">
+    <img id="top" style="width: 100%;" src="./src/top.jpg">
+    <img id="scen1" style="width: 100%;" src="./src/Scene1_.jpg" style="transition: opacity 1s">
 
     <img id="btnDacDao" onclick="location = './dacdao.html'" src="./dacdao.png"
       style="margin-left: 21%; margin-top: 10; height: 11%;border-radius: 1em;">
@@ -78,8 +75,7 @@
 
   <script>
 
-
-    setTimeout(() => alert("bấm vào Chú Tiểu để  (bật/tắt)  tụng kinh"), 3000);
+    setTimeout(() => alert("bấm vô Chú Tiểu để (bật/tắt)  tụng kinh"), 2500);
 
 
     let musicIdx = 0;
@@ -112,6 +108,8 @@
       if (isOnAudio) {
 
         body.webkitRequestFullscreen();
+        scen1.src = "./src/Scene3.jpg";
+        document.getElementById("top").style.display = "none";
         hideDacDaoCungDuong();
 
         if (musicIdx > musicArr.length) musicIdx = 0;
@@ -130,9 +128,16 @@
         myAudio.pause();
         myAudio.currentTime = 0;
         document.webkitExitFullscreen();
+        scen1.src = "./src/Scene1_.jpg";
+        document.getElementById("top").style.display = "block";
+
+
         showDacDaoCungDuong();
       }
     }
+
+
+
 
 
   </script>
