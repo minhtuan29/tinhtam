@@ -80,8 +80,8 @@
 
     let musicIdx = 0;
     let musicArr = [
-      new Audio("/music/b2.mp3"),    
       new Audio("/music/b3.mp3"),
+      new Audio("/music/b2.mp3"),
       new Audio("/music/b1.mp3"),
       new Audio("/music/b4.mp3"),
       new Audio("/music/b5.mp3")
@@ -106,7 +106,6 @@
     document.getElementById("btnTungKinh").onclick = () => {
       isOnAudio = !isOnAudio;
       if (isOnAudio) {
-
         body.webkitRequestFullscreen();
         scen1.src = "./src/Scene3.jpg";
         document.getElementById("top").style.display = "none";
