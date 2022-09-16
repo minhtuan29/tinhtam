@@ -135,7 +135,7 @@
         btnTungKinh.style.height = "6%";
 
 
-        if (musicIdx > musicArr.length) musicIdx = 0;
+        if (musicIdx === musicArr.length) musicIdx = 0;
         myAudio = musicArr[musicIdx++];
         myAudio.play();
         myAudio.addEventListener("ended", () => {
