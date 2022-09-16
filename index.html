@@ -142,7 +142,7 @@
           myAudio.currentTime = 0;
           myAudio.pause();
 
-          if (musicIdx > musicArr.length -1) musicIdx = 0;
+          if (musicIdx === musicArr.length) musicIdx = 0;
           myAudio = musicArr[musicIdx++];
           myAudio.play();
           isOnAudio = true;
