@@ -122,13 +122,13 @@
     document.getElementById("btnTungKinh").onclick = () => {
       isOnAudio = !isOnAudio;
       if (isOnAudio) {
-        body.webkitRequestFullscreen();
-        scen1.src = "./src/Scene3.jpg";
+        body.webkitRequestFullscreen(); 
         document.getElementById("top").style.display = "none";
         scen1.classList.add("off");
         scen1.classList.add("fakeOff");
-        setTimeout(() => { scen1.classList.remove('off'); }, 10);
-        setTimeout(() => { scen1.classList.remove('fakeOff'); }, 20);
+        scen1.src = "./src/Scene3.jpg";
+        setTimeout(() => { scen1.classList.remove('off'); }, 20);
+        setTimeout(() => { scen1.classList.remove('fakeOff'); }, 40);
         hideDacDaoCungDuong();
         canvasSmoke.style.bottom = "18%";
         canvasSmoke.style.left = "47%";
