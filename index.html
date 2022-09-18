@@ -121,9 +121,10 @@
       if (isOnAudio) {
         body.webkitRequestFullscreen(); 
         document.getElementById("top").style.display = "none";
+        scen1.src = "./src/Scene3.jpg";
         scen1.classList.add("off");
         scen1.classList.add("fakeOff");
-        scen1.src = "./src/Scene3.jpg";
+        
         setTimeout(() => { scen1.classList.remove('off'); }, 20);
         setTimeout(() => { scen1.classList.remove('fakeOff'); }, 40);
         hideDacDaoCungDuong();
@@ -154,9 +155,6 @@
         canvasSmoke.style.bottom = "14%";
         canvasSmoke.style.left = "47.5%";
         btnTungKinh.style.height = "7%";
-
-
-
 
 
         showDacDaoCungDuong();
