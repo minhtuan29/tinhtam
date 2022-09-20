@@ -100,8 +100,7 @@
       new Audio("/music/by.mp3"),
       new Audio("/music/b2.mp3"),
       new Audio("/music/b5.mp3"),
-      new Audio("/music/b3.mp3"),
-      new Audio("/music/b1.mp3")
+      new Audio("/music/b3.mp3")
     ];
 
     let canvasSmoke = document.getElementById("canvas");
@@ -131,8 +130,8 @@
         scen1.classList.add("off");
         scen1.classList.add("fakeOff");
 
-        setTimeout(() => { scen1.classList.remove('off'); }, 30);
-        setTimeout(() => { scen1.classList.remove('fakeOff'); }, 40);
+        setTimeout(() => { scen1.classList.remove('off'); }, 200);
+        setTimeout(() => { scen1.classList.remove('fakeOff'); }, 300);
         hideDacDaoCungDuong();
         canvasSmoke.style.bottom = "18%";
         canvasSmoke.style.left = "47%";
