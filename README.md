@@ -1,5 +1,9 @@
-# Tịnh Tâm
-ăn chay niệm phật    
+# Tịnh Tâm  
+![phat-min](https://user-images.githubusercontent.com/86332370/191321369-ab975da8-010b-48d2-8ea7-565f57a93ac0.png)  
+
+   Ăn chay niệm phật    
+     
+     
 Website: https://tinhtam.tk  | https://minhtuan29.github.io/tinhtam  
 Reference: http://tuvien.com  
   
@@ -11,7 +15,8 @@ Device screen size : Laptop 1920x1080 Scale 100%   -   PC Monitor 1920x1080
 
 # Note:  
 Tín ngưỡng phật giáo, nhạc tụng kinh trong phần mềm không phải nhạc độ kiếp.  
-Nếu người dùng nghĩ nhạc là độ kiếp, vì do chỉ nghe kinh phật khi có dịp.  
-![_1588151510901826585211](https://user-images.githubusercontent.com/86332370/191320172-7d1f22b9-fed9-4126-9acc-8fecee675c8a.png)  
+Nếu người dùng nghĩ nhạc là độ kiếp, vì do chỉ nghe kinh phật khi có dịp, chưa hiểu về kinh  
+![_1588151510901826585211 (1)](https://user-images.githubusercontent.com/86332370/191320761-56d719ed-a290-465d-adf8-23b3a308c23e.png)
+  
 Hãy an tâm sử dụng, xin đừng hiểu lầm.
 
