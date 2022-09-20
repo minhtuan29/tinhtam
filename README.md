@@ -11,5 +11,6 @@ Device screen size : Laptop 1920x1080 Scale 100%   -   PC Monitor 1920x1080
 
 # Note:  
 Tín ngưỡng phật giáo, nhạc tụng kinh trong phần mềm không phải nhạc độ kiếp.  
+Nếu người dùng nghĩ nhạc độ kiếp, thì do chỉ nghe kinh phật khi có dịp.  
 Hãy an tâm sử dụng, xin đừng hiểu lầm
 
