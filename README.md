@@ -1,9 +1,9 @@
 # Tịnh Tâm  - Ăn chay niệm phật
 
        
-<h2>Website : https://tinhtam.tk </h2>
+Website : https://tinhtam.tk  
 
-<h2> Ứng dụng được dùng sau khi làm việc xong. Thư giãn, tịnh tâm </h2>
+ Ứng dụng được dùng sau khi làm việc xong. Thư giãn, tịnh tâm 
   
 # Màn hình thiết bị   
 ứng dụng phù hợp với màn hình : Laptop 1920x1080 Scale 100%   -   PC Monitor 1920x1080  
