@@ -5,8 +5,8 @@
 
 <h2> Ứng dụng được dùng sau khi làm việc xong. Thư giãn, tịnh tâm </h2>
   
-# Không responsive   
-Trong trường hợp này, ứng dụng phù hợp với màn hình : Laptop 1920x1080 Scale 100%   -   PC Monitor 1920x1080  
+# Màn hình thiết bị   
+ứng dụng phù hợp với màn hình : Laptop 1920x1080 Scale 100%   -   PC Monitor 1920x1080  
   
 ![1](https://user-images.githubusercontent.com/86332370/191282684-185c128c-4053-4884-8964-05aca3dc5a88.JPG)  
 
