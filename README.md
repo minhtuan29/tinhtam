@@ -1,6 +1,6 @@
 # Tịnh Tâm  - Ăn chay niệm phật
 
-   ## Ứng dụng được dùng sau khi làm việc (code) xong. Thư giãn, tịnh tâm
+   ## Ứng dụng được dùng sau khi làm việc xong. Thư giãn, tịnh tâm
      
 Website: https://tinhtam.tk  | https://minhtuan29.github.io/tinhtam  
 Reference: http://tuvien.com  
