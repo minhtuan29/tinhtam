@@ -1,9 +1,9 @@
 # Tịnh Tâm  - Ăn chay niệm phật
 
-   ## Ứng dụng được dùng sau khi làm việc xong. Thư giãn, tịnh tâm
-     
-Website: https://tinhtam.tk  | https://minhtuan29.github.io/tinhtam  
+       
+<h2>Website : https://tinhtam.tk </h2>
 Reference: http://tuvien.com  
+<h2> Ứng dụng được dùng sau khi làm việc xong. Thư giãn, tịnh tâm </h2>
   
 # Không responsive   
 Trong trường hợp này, ứng dụng phù hợp với màn hình : Laptop 1920x1080 Scale 100%   -   PC Monitor 1920x1080  
@@ -17,3 +17,5 @@ Nếu người dùng nghĩ nhạc là độ kiếp, vì do chỉ nghe kinh phậ
 ![_1588151510901826585211 (1)](https://user-images.githubusercontent.com/86332370/191320761-56d719ed-a290-465d-adf8-23b3a308c23e.png)  
 Hãy an tâm sử dụng, xin đừng hiểu lầm.
 
+# Tác giả
+Hoàng Minh Tuấn
