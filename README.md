@@ -1,7 +1,7 @@
 # Tịnh Tâm  - Ăn chay niệm phật
 
        
-Website : https://tinhtam.tk  
+Website : https://minhtuan29.github.io/tinhtam/
 
  Ứng dụng được dùng sau khi làm việc xong. Thư giãn, tịnh tâm 
   
